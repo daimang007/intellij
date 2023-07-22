@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="C:\Users\8008710\AppData\Local\Temp\BNZ.648a54f41416e31\law.xsl"?><lmxlaw type="law003">
+	<lawName>
+		<text style="0"><![CDATA[DB15 정기적금]]></text>
+	</lawName>
+	<body>
+		<jomun>
+			<subSection ID="1">
+				<title>
+					<text style="0"><![CDATA[15.1 정기적금]]></text>
+				</title>
+				<article ID="2" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.1 의의]]></text>
+					</title>
+					<content level="0" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[정기적금(적금)은 일정기간 후에 일정금액을 지급할 것을 약정하고 매월 1회 일정금액(월부금)을 받는 것을 말한다.]]></text>
+					</content>
+				</article>
+				<article ID="3" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.2 가입 대상<개정 2016.6.7>]]></text>
+					</title>
+					<content level="0" ordinal="" style="color:#000000;" type="none">
+						<text style="color:#000000;"><![CDATA[실명의 개인 또는 법인]]></text>
+					</content>
+				</article>
+				<article ID="4" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.3 계약기간 및 월부금<개정 2023.3.28>]]></text>
+					</title>
+					<content level="1" ordinal="1." style="" type="hang">
+						<text style="0"><![CDATA[1. 정기적금(이하 "적금"이라 한다)의 계약기간은 6개월 이상 60개월 이하(월단위)로 정한다.]]></text>
+					</content>
+					<content level="1" ordinal="2." style="" type="hang">
+						<text style="0"><![CDATA[2. 월부금은 1,000원 이상으로 한다.]]></text>
+					</content>
+				</article>
+				<article ID="5" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.4 계약액산정]]></text>
+					</title>
+					<content level="0" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[계약액은 월부금에 총운용월적수와 연금리를 곱하고 12로 나누어 산출한 이자를 납입월부금 누계액에 합산한 금액으로 한다.]]></text>
+					</content>
+				</article>
+				<article ID="6" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.5 월부금의 일부수납<개정 2018.11.23><개정 2023.3.28>]]></text>
+					</title>
+					<content level="0" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[월부금의 일부만을 받았을 때에는 가수령증을 발행하고 별단예금 (기타)계정 일시예수계좌에 입금한 후 나머지 금액이 납입되면 당해계좌에 ]]></text>
+						<text style="color:#000000;"><![CDATA[대체처리한다]]></text>
+						<text style="0"><![CDATA[.]]></text>
+					</content>
+				</article>
+				<article ID="7" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.6 지급<개정 2023.3.28>]]></text>
+					</title>
+					<content level="0" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[정기적금은 계좌개설점 이외의 영업점에서도 예금주 본인확인 후 예금(이자)청구서에 기명날인을 받아, 납입금과 당해지급이자에서 납입지연이자를 차감한 금액을 지급한다.]]></text>
+					</content>
+				</article>
+				<article ID="8" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.7 분할지급<개정 2018.11.23><개정 2023.3.28>]]></text>
+					</title>
+					<content level="1" ordinal="1." style="" type="hang">
+						<text style="0"><![CDATA[1. 예금주로부터 정기적금의 일부에 대하여 지급요청이 있을 때에는 분할신청서를 받아 신청서에 찍힌 인감과 신고인감과의 일치여부를 확인한 후 월부금 납입합계액을 분할지급액과 계속 예입액으로 분할한다. 다만 서명거래의 경우에는 신청서에 기재한 서명과 신고한 서명과의 일치여부, 예금주 본인여부 및 비밀번호의 일치여부를 확인하여야 한다.]]></text>
+					</content>
+					<content level="1" ordinal="2." style="" type="hang">
+						<text style="0"><![CDATA[2. 분할지급액에 대하여는 다음과 같이 처리한다.]]></text>
+					</content>
+					<content level="2" ordinal="(1)" style="" type="ho">
+						<text style="0"><![CDATA[(1)증서에는 분할지급 내역을 기록하고 책임자가 확인한다.]]></text>
+					</content>
+					<content level="2" ordinal="(2)" style="" type="ho">
+						<text style="0"><![CDATA[(2)만기일이 경과하기전에 분할해지하는 경우에는 중도해지로 본다.]]></text>
+					</content>
+					<content level="1" ordinal="3." style="" type="hang">
+						<text style="0"><![CDATA[3. 계속예입액에 대하여는 다음과 같이 처리한다.]]></text>
+					</content>
+					<content level="2" ordinal="(1)" style="" type="ho">
+						<text style="0"><![CDATA[(1) 예금주, 계약일, 계약기간, 만기일 등의 조건과 월부금 수납회차별 수납일자는 ]]></text>
+						<text style="color:#000000;"><![CDATA[분할전계좌와]]></text>
+						<text style="0"><![CDATA[동일하게 처리하여야 한다.]]></text>
+					</content>
+					<content level="2" ordinal="(2)" style="" type="ho">
+						<text style="0"><![CDATA[(2) 증서의 발행일자는 분할처리일자로 하며, 계약일자는 "년 월 일 기산"이라 표시한 후 책임자가 검인한다.]]></text>
+					</content>
+					<content level="2" ordinal="(3)" style="" type="ho">
+						<text style="0"><![CDATA[(3) 분할신청서에는 분할처리내 역을 기록하고 책임자가 검인한 후 예금거래신청서에 합철한다.]]></text>
+					</content>
+					<content level="1" ordinal="4." style="" type="hang">
+						<text style="0"><![CDATA[4. 질권설정된 계좌, 지급정지된 계좌, 만기일이 경과된 계좌, 기타 사고신고 등이 된 계좌는 분할지급 할 수 없다.]]></text>
+					</content>
+				</article>
+				<article ID="9" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.8 중도해지<개정 2023.3.28>]]></text>
+					</title>
+					<content level="1" ordinal="1." style="" type="hang">
+						<text style="0"><![CDATA[1. 중도해지이자는 월부금에 총운용일적수와 소정의 중도해지금리를 곱하고 평년· 윤년에 불구하고 365일로]]></text>
+					</content>
+					<content level="1" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[나누고 계산한다.]]></text>
+					</content>
+					<content level="1" ordinal="2." style="" type="hang">
+						<text style="0"><![CDATA[2. 적금대출 취급시에는 당해 적금을 중도해지 처리한다.]]></text>
+					</content>
+				</article>
+				<article ID="10" code="c015001000">
+					<title>
+						<text style="0"><![CDATA[15.1.9 만기앞당김<개정 2023.3.28>]]></text>
+					</title>
+					<content level="0" ordinal="" style="" type="none">
+						<text style="0"><![CDATA[월부금의 모든 회차를 납입한 경우로서 예금주의 요청이 있으면 1개월 이내에서 만기일을 앞당길 수 있다. 다만, 만기지급액(적금계약액)에서 다음 방법에 의한 금액을 빼고 지급한다.]]></text>
+					</content>
+					<content>
+						<tbl_group border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;">
+							<tbody>
+								<tr>
+									<td colspan="1" height="53" rowspan="1" style="border-bottom:solid 1pt #000000;border-left:solid 1pt #000000;border-right:solid 1pt #000000;border-top:solid 1pt #000000;text-align:left;" width="407">
+										<content level="0" ordinal="" style="" type="none">
+											<text style="0"><![CDATA[]]></text>
+										</content>
+										<content level="0" ordinal="" style="text-align:left;" type="none">
+											<text style="0"><![CDATA[적금계약액×적금담보대출금리×앞당김일수/365]]></text>
+										</content>
+										<content level="0" ordinal="" style="line-height:25pt;margin-bottom:0pt;margin-top:0pt;text-align:left;" type="none">
+											<text style="font-size:11;"><![CDATA[※ 앞당김일수=앞당김일로부터 만기일 전일까지 일수]]></text>
+										</content>
+									</td>
+								</tr>
+							</tbody>
+						</tbl_group>
+					</content>
+				</article>
+				<article ID="945" code="c015077000">
+					<title>
+						<text style="0"><![CDATA[15.77.17 기타]]></text>
+					</title>
+					<content level="1" ordinal="1." style="" type="hang">
+						<text style="0"><![CDATA[1. 상품가입전 서민금융진흥원을 통해 가입자격 충족여부를 확인]]></text>
+					</content>
+					<content level="1" ordinal="2." style="" type="hang">
+						<text style="0"><![CDATA[2. 만기일이 휴일인 경우, 익영업일이후 해지 가능 (만기일전 해지시 비과세 및 정부기여금 혜택을 받을 수 없고, 중도해지이율 적용)]]></text>
+					</content>
+					<content level="1" ordinal="3." style="" type="hang">
+						<text style="0"><![CDATA[3. 이 예금은 본인 적립금에 매칭하여 정부기여금을 지급하며, 본인 적립금 미납입시, 정부기여금 지급되지 않는다.]]></text>
+					</content>
+				</article>
+			</subSection>
+		</jomun>
+		<addenda>
+		</addenda>
+	</body>
+</lmxlaw>
