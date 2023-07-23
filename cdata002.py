@@ -2,6 +2,7 @@ import xml.dom.minidom
 import json
 import sys
 import os
+import re
 import argparse
 from pprint import pprint
 from xml.dom import minidom
@@ -190,24 +191,26 @@ class CreateJson:
             if element.hasAttribute('style'):
                 element.removeAttributeNode(element.getAttributeNode('style'))
 
-
+        
+        
         #article_xml = article.toxml()
         article_xml = article.toxml()
         article_xml = article_xml.replace('\n', '').replace('\t', '')
         article_xml_str = ""
-        
-        doc = xml.dom.minidom.Document()
-        text_elements = article.getElementsByTagName('text')   
-        for text_element in text_elements: 
-           if text_element.firstChild is not None:
-                if text_element.childNodes[0].nodeType == 4:
-                #    print("test")
 
-                    new_element = doc.createElement("text")
-                    new_element_content = doc.createTextNode(text_element.firstChild.nodeValue)
-                    new_element.appendChild(new_element_content)
-                    text_element.parentNode.replaceChild(new_element, text_element)
+        # doc = xml.dom.minidom.Document()
+        # text_elements = article.getElementsByTagName('text')   
+        # for text_element in text_elements: 
+        #    if text_element.firstChild is not None:
+        #         if text_element.childNodes[0].nodeType == 4:
+        #         #    print("test")
 
+        #             new_element = doc.createElement("text")
+        #             new_element_content = doc.createTextNode(text_element.firstChild.nodeValue)
+        #             new_element.appendChild(new_element_content)
+        #             text_element.parentNode.replaceChild(new_element, text_element)
+
+       
 
         #print("article_xml ===============: " + str(article_xml))
 
@@ -263,7 +266,7 @@ class CreateJson:
                 article_xml_contexts.append(context_text.strip()) 
             else: # tbl_group 을 포함하고 있는 content는 xml로 붙인다.
                 for tbl_group in content.getElementsByTagName('tbl_group'):
-                    tableStr = tbl_group.toxml().replace('\n', '').replace('\t', '').strip()
+                    tableStr = tbl_group.toxml().replace('\n', '').replace('\t', '').replace("<![CDATA[", "").replace("]]>", "")#strip()
                     #print ("tbl_group = " + tableStr)
                     article_xml_contexts.append(tableStr)
         
