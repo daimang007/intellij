@@ -1,0 +1,19 @@
+filename = "embed_result_faiss_" + datetime.now().strftime("%m%d-%H%M") +"-"+ data_path.replace('\\','_')+ embedding_model.replace('/','_')
+               
+
+	   with open(filename, "w", encoding='utf8') as file:
+            print(f" 질문 : {question}", file=file)
+            for i, x in enumerate(document, 1):  # Using enumerate to get the order number starting from 1
+                print(f"Page {i}: {len(x.page_content)}", file=file)
+                print(x.page_content, file=file)
+                print("\n", file=file)
+
+
+
+        completion = openai.ChatCompletion.create(
+            engine=deployment_name,
+            messages=[{"role": "user", "content": f"{prompt}{question}{docs[0:16000]}"}],
+            temperature=0.5,
+            max_tokens=16000,
+            stream=False
+        )
