@@ -131,3 +131,5 @@ conversation.append({"role": "user", "content": txt_input})
 
 
 # print(completion['choices'][0]['message']['content'])
+
+https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions
