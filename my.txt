@@ -132,4 +132,9 @@ conversation.append({"role": "user", "content": txt_input})
 
 # print(completion['choices'][0]['message']['content'])
 
+    # chain =load_summarize_chain(llm, chain_type="stuff", prompt=PROMPT) 
+    # chain = load_summarize_chain(llm, chain_type="refine",verbose=True,refine_prompt=PROMPT)
+    # chain = load_summarize_chain(llm, chain_type="map_reduce",map_prompt=PROMPT, combine_prompt=PROMPT)
+    # chain = load_summarize_chain(llm, chain_type='map_reduce')
+
 https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions
