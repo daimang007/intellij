@@ -30,3 +30,56 @@ def generate_response(txt):
     # Text summarization
     chain = load_summarize_chain(llm, chain_type='map_reduce')
     return chain.run(docs)
+
+def generate_split_text(prompt):
+    max_context_length = 4096 # 최대 문맥 길이
+    if len(prompt) > max_context_length:
+        prompt = prompt[:max_context_length]
+    openai.api_base =  OPENAI_BASE
+    openai.api_type = OPENAI_TYPE
+    openai.api_version = OPENAI_VERSION # this may change in the future
+    openai.api_key = OPENAI_API_KEY
+    response = openai.Completion.create(
+        engine=OPENAI_DEPLOYMENT_SUMMARY,
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5
+    )
+    
+    return response.choices[0].text
+
+
+model = load_summarize_chain(llm=llm,chain_type=”stuff”)
+model.run(document)
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+char_text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0) 
+docs = char_text_splitter.split_documents(document)
+
+print(len(docs))
+
+model = load_summarize_chain(llm=llm, chain_type=”map_reduce”)
+model.run(docs)
+
+model = load_summarize_chain(llm=llm, chain_type=”refine”)
+model.run(docs)
+
+system_message = {"role": "system", "content": text}
+conversation = []
+conversation.append(system_message)
+conversation.append({"role": "user", "content": txt_input})
+
+# openai.api_type = "Azure"
+# openai.api_base = ""
+# openai.api_key = ""
+# openai.api_version = "2023-03-15-preview"
+# completion = openai.ChatCompletion.create(
+#               engine='gpt-35-turbo',
+#               messages=conversation,
+#               temperature=0.1
+#             )
+
+
+# print(completion['choices'][0]['message']['content'])
