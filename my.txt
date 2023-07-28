@@ -30,7 +30,55 @@ def generate_response(txt):
     # Text summarization
     chain = load_summarize_chain(llm, chain_type='map_reduce')
     return chain.run(docs)
+""" OpenAI Make Summary"""
+max_context_length = 4096 # 최대 문맥 길이
+max_tokens = 1024 # 최대 토큰 길이
 
+# 입력을 여러 번 요청하는 함수
+def generate_text(prompt):
+    # 요청 문장의 길이가 최대 문맥 길이를 초과하는 경우 나누어 요청
+    if len(prompt) > max_context_length:
+        prompt_chunks = [prompt[i:i+max_context_length] for i in range(0, len(prompt), max_context_length)]
+    else:
+        prompt_chunks = [prompt]
+
+    response_texts = []
+    openai.api_base =  OPENAI_BASE
+    openai.api_type = OPENAI_TYPE
+    openai.api_version = OPENAI_VERSION # this may change in the future
+    openai.api_key = OPENAI_API_KEY
+    for chunk in prompt_chunks:
+        # OpenAI API로 요청
+        response = openai.Completion.create(
+            engine=OPENAI_DEPLOYMENT_SUMMARY,
+            prompt=chunk,
+            max_tokens=max_tokens,
+            temperature=0.9,
+            top_p=1,
+            stop=None,
+            frequency_penalty=0,
+            presence_penalty=0.6
+        )
+        response_text = response.choices[0].text.strip()
+        response_texts.append(response_text)
+
+    # 결과를 하나로 합쳐서 반환
+    return " ".join(response_texts)
+
+retry_count = 0
+summary_result = ''
+while retry_count < 3:
+    try:
+        start_phrase = f'Summariaz to korean the text below in without adding new information.\n\n[Start of text]{openai_text}[End of text]'
+        summary_result = generate_text(start_phrase)
+        return summary_result
+    except Exception as generate_text_error:
+        print(f'generate_text Error: {generate_text_error.args}')
+        retry_count += 1
+        time.sleep(1)
+위 요청 방식대로하면 요청을 여러번 나누어서 보내기 때문에 크게 문제가 되지 않지만, 대화형이라 요청 내용이 섞일 수 있는 가능성이 있다.
+
+따라서 두번째 방법, 즉 요청 내용을 최대 크기에 맞게 자르는 방법도 있다.
 def generate_split_text(prompt):
     max_context_length = 4096 # 최대 문맥 길이
     if len(prompt) > max_context_length:
