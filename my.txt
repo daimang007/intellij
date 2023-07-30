@@ -138,3 +138,5 @@ conversation.append({"role": "user", "content": txt_input})
     # chain = load_summarize_chain(llm, chain_type='map_reduce')
 
 https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions
+
+https://velog.io/@noh0907/ChatGPT-API-Token-Limit-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-%EC%9A%94%EA%B8%88-%EC%A4%84%EC%9D%B4%EA%B8%B0
