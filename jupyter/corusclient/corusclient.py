@@ -59,7 +59,6 @@ class CorusClient:
         # )
         # output = server.json()
         # # self.token = output['access_token']
-        # self.token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOjYsInVzZXJfbmFtZSI6ImhlZXNlb2sgamVvbmciLCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0xMyAwMTo1MjowMCIsImV4cGlyZXNfaW4iOjYwLCJleHAiOjE2OTQ1NzM1MjB9.9T4i3hy4JtP6ZKbVPe_X9WmkZU0AqW7S6umTv2v5uYs'
    
     def __del__(self):
         print("Corus client reset.")
